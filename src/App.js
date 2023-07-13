@@ -6,10 +6,7 @@ function App() {
   const inputRef = useRef(null);
   const [state, setThisState] = useState({
     inputVal: "",
-    historyData: [
-      { input: "123", output: "23" },
-      { input: "123", output: "23" },
-    ],
+    historyData: [],
   });
   const setState = (nv) => setThisState((ov) => ({ ...ov, ...nv }));
 
